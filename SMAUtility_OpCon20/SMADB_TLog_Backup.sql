@@ -7,7 +7,7 @@ USE  [$(DatabaseName)]
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-BACKUP LOG [$(DatabaseName)] TO DISK = '$(PathToTranLogBackupFile)' WITH NOINIT
+BACKUP LOG [$(DatabaseName)] TO DISK = '$(PathToTranLogBackupFile)' WITH INIT
 GO
 SET QUOTED_IDENTIFIER OFF
 GO
